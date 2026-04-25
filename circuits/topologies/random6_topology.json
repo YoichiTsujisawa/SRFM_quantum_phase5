@@ -1,0 +1,37 @@
+{
+  "topology_name": "random6",
+  "topology_class": "irregular6_fixed",
+  "n_qubits": 6,
+  "edge_count": 6,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "is_connected": true,
+  "has_loop": true,
+  "phase_role": "intermediate_comparison",
+  "phase5_response_hypothesis": "Intermediate regime between ring-like persistence and chain-like adaptation.",
+  "notes": "Fixed irregular connected topology carried forward from Phase4. Must remain fixed across runs and releases for reproducibility."
+}

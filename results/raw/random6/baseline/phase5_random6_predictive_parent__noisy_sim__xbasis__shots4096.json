@@ -1,0 +1,159 @@
+{
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "topology": "random6",
+  "topology_class": "irregular6_fixed",
+  "phase_role": "fixed_irregular_comparison",
+  "phase5_role": "predictive_parent",
+  "predicted_response_class": "intermediate_mixed_response",
+  "circuit_id": "phase5_random6_predictive_parent",
+  "parent_circuit_id": "phase5_random6_predictive_parent",
+  "source_phase4_circuit_id": "phase4_random6_rx48_ry52",
+  "run_type": "baseline",
+  "noise_mode": "noisy_sim",
+  "measurement_basis": "X",
+  "shots": 4096,
+  "seed_simulator": 42,
+  "seed_transpiler": 42,
+  "n_qubits": 6,
+  "rx_ratio": 0.48,
+  "ry_ratio": 0.52,
+  "rx_percent": 48,
+  "ry_percent": 52,
+  "ablation": null,
+  "edge_definition": {
+    "e0": [
+      0,
+      1
+    ],
+    "e1": [
+      1,
+      2
+    ],
+    "e2": [
+      2,
+      3
+    ],
+    "e3": [
+      3,
+      4
+    ],
+    "e4": [
+      4,
+      1
+    ],
+    "e5": [
+      4,
+      5
+    ]
+  },
+  "counts": {
+    "000110": 31,
+    "110001": 38,
+    "101111": 150,
+    "010010": 91,
+    "010101": 73,
+    "010001": 42,
+    "100111": 35,
+    "110110": 37,
+    "101010": 66,
+    "000001": 96,
+    "110010": 20,
+    "000101": 87,
+    "101110": 129,
+    "100010": 50,
+    "111110": 48,
+    "001011": 59,
+    "000010": 37,
+    "101011": 92,
+    "110101": 96,
+    "001110": 11,
+    "100101": 40,
+    "111011": 152,
+    "101000": 97,
+    "110000": 44,
+    "000111": 55,
+    "001010": 16,
+    "100001": 93,
+    "111111": 130,
+    "000100": 53,
+    "101101": 28,
+    "110011": 239,
+    "000000": 28,
+    "110111": 160,
+    "100011": 52,
+    "001100": 83,
+    "111101": 137,
+    "011001": 97,
+    "101100": 26,
+    "110100": 46,
+    "000011": 41,
+    "001001": 73,
+    "001111": 28,
+    "100110": 105,
+    "111010": 82,
+    "001000": 63,
+    "011011": 32,
+    "100000": 99,
+    "010111": 74,
+    "010011": 23,
+    "001101": 27,
+    "111100": 13,
+    "100100": 68,
+    "011101": 122,
+    "011111": 40,
+    "011000": 27,
+    "010110": 39,
+    "111000": 55,
+    "011010": 35,
+    "101001": 43,
+    "010000": 48,
+    "011110": 38,
+    "010100": 21,
+    "111001": 28,
+    "011100": 8
+  },
+  "summary": {
+    "total_counts": 4096,
+    "n_observed_states": 64,
+    "top_state": "110011",
+    "top_count": 239,
+    "top_probability": 0.058349609375,
+    "target_probability": 0.03173828125,
+    "abs_parity": 0.02294921875,
+    "entropy_bits": 5.70371154340416
+  },
+  "target_bitstring": "111111",
+  "metadata": {
+    "generator": "run_phase5_parent_baseline_scan.py",
+    "builder_version": "phase5_v1_phase4_generalized_parent_baseline",
+    "profile_weights": [
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "layerA_rx_scale": 1.0,
+    "layerA_ry_scale": 1.0,
+    "layerB_rx_scale": 0.85,
+    "layerB_ry_scale": 0.85,
+    "selection_reason": "Selected as the Phase5 random6 parent because Phase4 identified this design as the strongest intermediate irregular representative.",
+    "notes": "Phase5 predictive parent circuit specification. This record is a selected representative parent derived from the Phase4 baseline layer and serves as the source circuit for multi-edge perturbation experiments.",
+    "noise_model": {
+      "single_qubit_depolarizing_p": 0.0015,
+      "two_qubit_depolarizing_p": 0.015,
+      "readout_confusion": [
+        [
+          0.985,
+          0.015
+        ],
+        [
+          0.02,
+          0.98
+        ]
+      ]
+    }
+  }
+}

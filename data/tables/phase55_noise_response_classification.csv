@@ -1,0 +1,4 @@
+﻿scope,n_noise_levels,corr_noise_vs_delta_abs_parity,corr_noise_vs_delta_target_probability,corr_noise_vs_delta_entropy,parity_response_regime,target_response_regime,min_delta_abs_parity,max_delta_abs_parity,min_delta_target_probability,max_delta_target_probability
+chain6,5,-0.9994516118740756,-0.8295613557843402,0.9987802741114851,persistent_parity_amplification,persistent_target_suppression,0.1396484375,0.36669921875,-0.008056640625,-0.00634765625
+ring6,5,0.9668281709684178,0.988781314636645,0.954785489038076,persistent_parity_suppression,persistent_target_suppression,-0.11376953125,-0.03173828125,-0.033447265625,-0.01611328125
+chain_minus_ring,5,-0.9978489135703651,-0.9930876502960974,0.9699118739039982,chain_parity_advantage_persistent,chain_minus_ring_target_divergence,0.17138671875,0.48046875,0.00830078125,0.027099609375

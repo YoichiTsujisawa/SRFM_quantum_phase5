@@ -1,0 +1,4 @@
+﻿topology,predicted_response_class,observed_response_class,prediction_match,best_order_by_target,best_mean_delta_target_probability,worst_order_by_target,worst_mean_delta_target_probability,best_order_by_parity,best_mean_delta_abs_parity,worst_order_by_parity,worst_mean_delta_abs_parity
+chain6,adaptive_improvement_then_collapse,intermediate_mixed_response,partial_match,3,0.2146728515625,1,0.0791015625,2,0.16376953125,1,0.09921875
+random6,intermediate_mixed_response,intermediate_mixed_response,match,3,0.08648681640625,1,0.021321614583333332,3,0.1202392578125,1,0.040771484375
+ring6,formation_dominated_gradual_degradation,intermediate_mixed_response,partial_match,3,0.03671875,1,-0.0260009765625,3,0.04951171875,1,-0.023193359375

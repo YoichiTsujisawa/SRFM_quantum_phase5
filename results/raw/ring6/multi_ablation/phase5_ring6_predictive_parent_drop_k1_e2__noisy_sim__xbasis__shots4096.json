@@ -1,0 +1,206 @@
+{
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "topology": "ring6",
+  "topology_class": "cycle",
+  "phase_role": "reference_baseline",
+  "phase5_role": "predictive_parent",
+  "predicted_response_class": "formation_dominated_gradual_degradation",
+  "circuit_id": "phase5_ring6_predictive_parent_drop_k1_e2",
+  "parent_circuit_id": "phase5_ring6_predictive_parent",
+  "run_type": "multi_ablation",
+  "noise_mode": "noisy_sim",
+  "measurement_basis": "X",
+  "shots": 4096,
+  "seed_simulator": 42,
+  "seed_transpiler": 42,
+  "n_qubits": 6,
+  "rx_ratio": 0.62,
+  "ry_ratio": 0.38,
+  "ablation": {
+    "type": "multi_edge_drop",
+    "perturbation_order": 1,
+    "dropped_edges": [
+      "e2"
+    ],
+    "dropped_edge_qubits": [
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "edge_definition": {
+    "e0": [
+      0,
+      1
+    ],
+    "e1": [
+      1,
+      2
+    ],
+    "e2": [
+      2,
+      3
+    ],
+    "e3": [
+      3,
+      4
+    ],
+    "e4": [
+      4,
+      5
+    ],
+    "e5": [
+      5,
+      0
+    ]
+  },
+  "derived_topology_state": {
+    "remaining_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "remaining_edge_count": 5,
+    "dropped_edge_count": 1,
+    "is_connected_after_ablation": true,
+    "n_components_after_ablation": 1,
+    "has_loop_after_ablation": false
+  },
+  "counts": {
+    "110111": 85,
+    "000000": 165,
+    "100000": 98,
+    "101000": 22,
+    "010110": 30,
+    "100111": 64,
+    "100011": 97,
+    "111101": 54,
+    "001100": 116,
+    "111110": 40,
+    "100010": 37,
+    "001011": 27,
+    "001001": 120,
+    "000111": 42,
+    "110000": 116,
+    "111000": 44,
+    "110100": 31,
+    "101100": 48,
+    "000011": 103,
+    "101111": 67,
+    "110001": 104,
+    "000110": 88,
+    "100110": 49,
+    "001111": 30,
+    "111010": 86,
+    "000101": 13,
+    "110010": 58,
+    "101110": 112,
+    "001010": 134,
+    "100001": 30,
+    "111111": 56,
+    "000100": 31,
+    "101101": 44,
+    "110011": 66,
+    "110110": 55,
+    "000001": 72,
+    "101010": 81,
+    "010011": 52,
+    "111001": 57,
+    "001110": 20,
+    "100101": 80,
+    "111011": 84,
+    "001000": 22,
+    "110101": 28,
+    "000010": 35,
+    "101011": 26,
+    "010101": 82,
+    "011000": 87,
+    "010010": 57,
+    "010001": 35,
+    "011110": 87,
+    "011011": 53,
+    "010100": 128,
+    "001101": 37,
+    "100100": 130,
+    "111100": 21,
+    "011111": 41,
+    "011101": 116,
+    "011010": 30,
+    "010111": 95,
+    "101001": 81,
+    "010000": 32,
+    "011001": 48,
+    "011100": 17
+  },
+  "summary": {
+    "total_counts": 4096,
+    "n_observed_states": 64,
+    "top_state": "000000",
+    "top_count": 165,
+    "top_probability": 0.040283203125,
+    "target_probability": 0.013671875,
+    "abs_parity": 0.16064453125,
+    "entropy_bits": 5.7874993606665734
+  },
+  "target_bitstring": "111111",
+  "metadata": {
+    "generator": "run_phase5_multi_ablation_scan.py",
+    "builder_version": "phase5_v1_phase4_generalized_multi_ablation",
+    "profile_weights": [
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "layerA_rx_scale": 1.0,
+    "layerA_ry_scale": 1.0,
+    "layerB_rx_scale": 0.85,
+    "layerB_ry_scale": 0.85,
+    "dropped_edge_names": [
+      "e2"
+    ],
+    "dropped_edge_qubits": [
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_pattern": "phase5_ring6_two_layer_profile_multi_edge_ablation",
+    "notes": "Phase5 predictive multi-edge ablation candidate. Uses the same selected parent circuit structure as the predictive baseline, with the specified support edges removed from both CZ support layers.",
+    "noise_model": {
+      "single_qubit_depolarizing_p": 0.0015,
+      "two_qubit_depolarizing_p": 0.015,
+      "readout_confusion": [
+        [
+          0.985,
+          0.015
+        ],
+        [
+          0.02,
+          0.98
+        ]
+      ]
+    }
+  }
+}

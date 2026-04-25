@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "SRFM Quantum Protocol Phase 5"
+authors:
+  - family-names: "Tsujisawa"
+    given-names: "Yoichi"
+date-released: 2026-04-25
+license: MIT

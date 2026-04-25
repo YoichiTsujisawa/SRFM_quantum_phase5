@@ -1,0 +1,195 @@
+{
+  "catalog_name": "phase5_parent_catalog",
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "catalog_version": "v1.0",
+  "builder_script": "generate_phase5_parent_catalog.py",
+  "builder_version": "phase5_parent_selector_v1",
+  "source_catalog_ref": "E:/SRFM_QUANTUM_PHASE4/circuits/phase4_baseline_catalog.json",
+  "parent_selection_policy": "one_representative_parent_per_topology",
+  "fixed_settings": {
+    "noise_model_tag": "noisy_sim",
+    "measurement_basis": "xbasis",
+    "shots": 4096,
+    "n_qubits": 6
+  },
+  "n_records": 3,
+  "records": [
+    {
+      "circuit_id": "phase5_chain6_predictive_parent",
+      "spec_name": "chain6_predictive_parent",
+      "scan_type": "predictive_parent_baseline",
+      "phase": "Phase5",
+      "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+      "builder_version": "phase5_parent_selector_v1",
+      "source_phase4_circuit_id": "phase4_chain6_rx50_ry50",
+      "source_phase4_spec_name": "chain6_rx50_ry50",
+      "source_phase4_builder_version": "phase4_baseline_builder_v1",
+      "parent_selection_policy": "one_representative_parent_per_topology",
+      "topology_name": "chain6",
+      "topology_class": "path",
+      "phase_role": "loop_free_comparison",
+      "phase5_role": "predictive_parent",
+      "n_qubits": 6,
+      "edge_count": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "is_connected": true,
+      "has_loop": false,
+      "rx_ratio": 0.5,
+      "ry_ratio": 0.5,
+      "rx_percent": 50,
+      "ry_percent": 50,
+      "noise_model_tag": "noisy_sim",
+      "measurement_basis": "xbasis",
+      "shots": 4096,
+      "predicted_response_class": "adaptive_improvement_then_collapse",
+      "selection_reason": "Selected as the Phase5 chain6 parent because Phase4 identified this design as the strongest adaptive-improvement representative.",
+      "circuit_json_relpath": "circuits/chain6/baseline/chain6_predictive_parent.json",
+      "output_json_relpath": "results/raw/chain6/baseline/chain6_predictive_parent__noisy_sim__xbasis__shots4096.json",
+      "notes": "Phase5 predictive parent circuit specification. This record is a selected representative parent derived from the Phase4 baseline layer and serves as the source circuit for multi-edge perturbation experiments."
+    },
+    {
+      "circuit_id": "phase5_random6_predictive_parent",
+      "spec_name": "random6_predictive_parent",
+      "scan_type": "predictive_parent_baseline",
+      "phase": "Phase5",
+      "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+      "builder_version": "phase5_parent_selector_v1",
+      "source_phase4_circuit_id": "phase4_random6_rx48_ry52",
+      "source_phase4_spec_name": "random6_rx48_ry52",
+      "source_phase4_builder_version": "phase4_baseline_builder_v1",
+      "parent_selection_policy": "one_representative_parent_per_topology",
+      "topology_name": "random6",
+      "topology_class": "irregular6_fixed",
+      "phase_role": "fixed_irregular_comparison",
+      "phase5_role": "predictive_parent",
+      "n_qubits": 6,
+      "edge_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "is_connected": true,
+      "has_loop": true,
+      "rx_ratio": 0.48,
+      "ry_ratio": 0.52,
+      "rx_percent": 48,
+      "ry_percent": 52,
+      "noise_model_tag": "noisy_sim",
+      "measurement_basis": "xbasis",
+      "shots": 4096,
+      "predicted_response_class": "intermediate_mixed_response",
+      "selection_reason": "Selected as the Phase5 random6 parent because Phase4 identified this design as the strongest intermediate irregular representative.",
+      "circuit_json_relpath": "circuits/random6/baseline/random6_predictive_parent.json",
+      "output_json_relpath": "results/raw/random6/baseline/random6_predictive_parent__noisy_sim__xbasis__shots4096.json",
+      "notes": "Phase5 predictive parent circuit specification. This record is a selected representative parent derived from the Phase4 baseline layer and serves as the source circuit for multi-edge perturbation experiments."
+    },
+    {
+      "circuit_id": "phase5_ring6_predictive_parent",
+      "spec_name": "ring6_predictive_parent",
+      "scan_type": "predictive_parent_baseline",
+      "phase": "Phase5",
+      "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+      "builder_version": "phase5_parent_selector_v1",
+      "source_phase4_circuit_id": "phase4_ring6_rx62_ry38",
+      "source_phase4_spec_name": "ring6_rx62_ry38",
+      "source_phase4_builder_version": "phase4_baseline_builder_v1",
+      "parent_selection_policy": "one_representative_parent_per_topology",
+      "topology_name": "ring6",
+      "topology_class": "cycle",
+      "phase_role": "reference_baseline",
+      "phase5_role": "predictive_parent",
+      "n_qubits": 6,
+      "edge_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "is_connected": true,
+      "has_loop": true,
+      "rx_ratio": 0.62,
+      "ry_ratio": 0.38,
+      "rx_percent": 62,
+      "ry_percent": 38,
+      "noise_model_tag": "noisy_sim",
+      "measurement_basis": "xbasis",
+      "shots": 4096,
+      "predicted_response_class": "formation_dominated_gradual_degradation",
+      "selection_reason": "Selected as the Phase5 ring6 parent because Phase4 identified this design as the strongest ring-side representative under difference-centered interpretation.",
+      "circuit_json_relpath": "circuits/ring6/baseline/ring6_predictive_parent.json",
+      "output_json_relpath": "results/raw/ring6/baseline/ring6_predictive_parent__noisy_sim__xbasis__shots4096.json",
+      "notes": "Phase5 predictive parent circuit specification. This record is a selected representative parent derived from the Phase4 baseline layer and serves as the source circuit for multi-edge perturbation experiments."
+    }
+  ],
+  "global_notes": [
+    "This catalog defines the selected parent layer for Phase5 predictive experiments.",
+    "Each topology contributes exactly one representative parent circuit.",
+    "Phase5 intentionally reduces parameter diversity in order to foreground predictive structural-response testing.",
+    "These parent circuits are the truth source for Phase5 multi-edge perturbation generation."
+  ]
+}

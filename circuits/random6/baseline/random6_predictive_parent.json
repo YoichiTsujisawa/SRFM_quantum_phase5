@@ -1,0 +1,58 @@
+{
+  "circuit_id": "phase5_random6_predictive_parent",
+  "spec_name": "random6_predictive_parent",
+  "scan_type": "predictive_parent_baseline",
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "builder_version": "phase5_parent_selector_v1",
+  "source_phase4_circuit_id": "phase4_random6_rx48_ry52",
+  "source_phase4_spec_name": "random6_rx48_ry52",
+  "source_phase4_builder_version": "phase4_baseline_builder_v1",
+  "parent_selection_policy": "one_representative_parent_per_topology",
+  "topology_name": "random6",
+  "topology_class": "irregular6_fixed",
+  "phase_role": "fixed_irregular_comparison",
+  "phase5_role": "predictive_parent",
+  "n_qubits": 6,
+  "edge_count": 6,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "is_connected": true,
+  "has_loop": true,
+  "rx_ratio": 0.48,
+  "ry_ratio": 0.52,
+  "rx_percent": 48,
+  "ry_percent": 52,
+  "noise_model_tag": "noisy_sim",
+  "measurement_basis": "xbasis",
+  "shots": 4096,
+  "predicted_response_class": "intermediate_mixed_response",
+  "selection_reason": "Selected as the Phase5 random6 parent because Phase4 identified this design as the strongest intermediate irregular representative.",
+  "circuit_json_relpath": "circuits/random6/baseline/random6_predictive_parent.json",
+  "output_json_relpath": "results/raw/random6/baseline/random6_predictive_parent__noisy_sim__xbasis__shots4096.json",
+  "notes": "Phase5 predictive parent circuit specification. This record is a selected representative parent derived from the Phase4 baseline layer and serves as the source circuit for multi-edge perturbation experiments."
+}

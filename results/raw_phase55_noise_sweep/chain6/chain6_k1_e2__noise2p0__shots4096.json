@@ -1,0 +1,167 @@
+{
+  "phase": "Phase5.5",
+  "study_title": "SRFM Quantum Phase5.5 Noise Sweep",
+  "run_type": "noise_sweep",
+  "topology": "chain6",
+  "kind": "multi_ablation",
+  "circuit_id": "phase5_chain6_predictive_parent_drop_k1_e2",
+  "parent_circuit_id": "phase5_chain6_predictive_parent",
+  "predicted_response_class": "adaptive_improvement_then_collapse",
+  "noise_scale": 2.0,
+  "shots": 4096,
+  "seed_simulator": 42,
+  "seed_transpiler": 42,
+  "n_qubits": 6,
+  "rx_ratio": 0.5,
+  "ry_ratio": 0.5,
+  "edge_definition": {
+    "e0": [
+      0,
+      1
+    ],
+    "e1": [
+      1,
+      2
+    ],
+    "e2": [
+      2,
+      3
+    ],
+    "e3": [
+      3,
+      4
+    ],
+    "e4": [
+      4,
+      5
+    ]
+  },
+  "ablation": {
+    "type": "multi_edge_drop",
+    "perturbation_order": 1,
+    "dropped_edges": [
+      "e2"
+    ],
+    "dropped_edge_qubits": [
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "counts": {
+    "000100": 30,
+    "110011": 258,
+    "101101": 149,
+    "101110": 82,
+    "000101": 113,
+    "110010": 56,
+    "001100": 17,
+    "111101": 105,
+    "100011": 66,
+    "010010": 12,
+    "010011": 50,
+    "110111": 148,
+    "000000": 84,
+    "110000": 161,
+    "000111": 92,
+    "010111": 27,
+    "000010": 22,
+    "101011": 190,
+    "110101": 192,
+    "100101": 39,
+    "001110": 19,
+    "111011": 147,
+    "101100": 33,
+    "110100": 54,
+    "000011": 155,
+    "101001": 30,
+    "100010": 9,
+    "001011": 54,
+    "111110": 68,
+    "011000": 66,
+    "011011": 123,
+    "001010": 8,
+    "100001": 6,
+    "111111": 89,
+    "000001": 32,
+    "101010": 44,
+    "110110": 130,
+    "100100": 12,
+    "001101": 41,
+    "111100": 32,
+    "011101": 82,
+    "101111": 112,
+    "110001": 49,
+    "000110": 70,
+    "011111": 61,
+    "101000": 113,
+    "011001": 24,
+    "111000": 105,
+    "100110": 28,
+    "001111": 36,
+    "111010": 21,
+    "011110": 54,
+    "010101": 37,
+    "100000": 33,
+    "100111": 34,
+    "001000": 31,
+    "010110": 22,
+    "010000": 25,
+    "011010": 20,
+    "111001": 26,
+    "010001": 12,
+    "011100": 32,
+    "010100": 18,
+    "001001": 6
+  },
+  "summary": {
+    "total_counts": 4096,
+    "n_observed_states": 64,
+    "top_state": "110011",
+    "top_count": 258,
+    "top_probability": 0.06298828125,
+    "target_probability": 0.021728515625,
+    "abs_parity": 0.16552734375,
+    "entropy_bits": 5.547951692148052
+  },
+  "target_bitstring": "111111",
+  "transpile_metadata": {
+    "optimization_level": 0,
+    "transpiled_depth": 10,
+    "transpiled_size": 44,
+    "transpiled_count_ops": {
+      "rx": 12,
+      "ry": 12,
+      "cz": 8,
+      "h": 6,
+      "measure": 6
+    }
+  },
+  "noise_model": {
+    "base_single_qubit_depolarizing_p": 0.0015,
+    "base_two_qubit_depolarizing_p": 0.015,
+    "base_readout_e01": 0.015,
+    "base_readout_e10": 0.02,
+    "scaled_single_qubit_depolarizing_p": 0.003,
+    "scaled_two_qubit_depolarizing_p": 0.03,
+    "scaled_readout_e01": 0.03,
+    "scaled_readout_e10": 0.04
+  },
+  "metadata": {
+    "generator": "run_phase55_noise_sweep.py",
+    "builder_version": "phase55_noise_sweep_v1",
+    "profile_weights": [
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "layerA_rx_scale": 1.0,
+    "layerA_ry_scale": 1.0,
+    "layerB_rx_scale": 0.85,
+    "layerB_ry_scale": 0.85
+  }
+}

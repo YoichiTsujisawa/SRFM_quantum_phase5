@@ -1,0 +1,212 @@
+{
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "topology": "ring6",
+  "topology_class": "cycle",
+  "phase_role": "reference_baseline",
+  "phase5_role": "predictive_parent",
+  "predicted_response_class": "formation_dominated_gradual_degradation",
+  "circuit_id": "phase5_ring6_predictive_parent_drop_k2_e0_e2",
+  "parent_circuit_id": "phase5_ring6_predictive_parent",
+  "run_type": "multi_ablation",
+  "noise_mode": "noisy_sim",
+  "measurement_basis": "X",
+  "shots": 4096,
+  "seed_simulator": 42,
+  "seed_transpiler": 42,
+  "n_qubits": 6,
+  "rx_ratio": 0.62,
+  "ry_ratio": 0.38,
+  "ablation": {
+    "type": "multi_edge_drop",
+    "perturbation_order": 2,
+    "dropped_edges": [
+      "e0",
+      "e2"
+    ],
+    "dropped_edge_qubits": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "edge_definition": {
+    "e0": [
+      0,
+      1
+    ],
+    "e1": [
+      1,
+      2
+    ],
+    "e2": [
+      2,
+      3
+    ],
+    "e3": [
+      3,
+      4
+    ],
+    "e4": [
+      4,
+      5
+    ],
+    "e5": [
+      5,
+      0
+    ]
+  },
+  "derived_topology_state": {
+    "remaining_edges": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "remaining_edge_count": 4,
+    "dropped_edge_count": 2,
+    "is_connected_after_ablation": false,
+    "n_components_after_ablation": 2,
+    "has_loop_after_ablation": false
+  },
+  "counts": {
+    "111010": 5,
+    "001111": 97,
+    "100110": 211,
+    "100101": 20,
+    "111011": 23,
+    "001110": 334,
+    "110000": 12,
+    "000111": 174,
+    "011111": 309,
+    "010110": 147,
+    "100100": 41,
+    "111100": 11,
+    "001101": 22,
+    "101100": 47,
+    "000011": 10,
+    "110100": 30,
+    "000000": 22,
+    "110111": 227,
+    "101101": 10,
+    "110011": 14,
+    "000100": 70,
+    "110001": 17,
+    "101111": 50,
+    "000110": 388,
+    "001011": 10,
+    "100010": 13,
+    "111110": 68,
+    "110010": 14,
+    "000101": 23,
+    "101110": 243,
+    "100001": 2,
+    "001010": 24,
+    "111111": 253,
+    "101010": 17,
+    "000001": 10,
+    "110110": 182,
+    "100111": 89,
+    "100011": 8,
+    "001100": 75,
+    "111101": 44,
+    "101011": 7,
+    "000010": 26,
+    "110101": 47,
+    "010011": 22,
+    "010111": 275,
+    "011110": 62,
+    "010010": 9,
+    "011100": 19,
+    "001000": 18,
+    "010101": 50,
+    "010001": 21,
+    "011101": 60,
+    "100000": 17,
+    "001001": 7,
+    "011001": 17,
+    "111001": 13,
+    "011000": 6,
+    "111000": 5,
+    "010100": 12,
+    "101001": 5,
+    "011011": 16,
+    "010000": 5,
+    "101000": 8,
+    "011010": 3
+  },
+  "summary": {
+    "total_counts": 4096,
+    "n_observed_states": 64,
+    "top_state": "000110",
+    "top_count": 388,
+    "top_probability": 0.0947265625,
+    "target_probability": 0.061767578125,
+    "abs_parity": 0.00439453125,
+    "entropy_bits": 4.921998621754214
+  },
+  "target_bitstring": "111111",
+  "metadata": {
+    "generator": "run_phase5_multi_ablation_scan.py",
+    "builder_version": "phase5_v1_phase4_generalized_multi_ablation",
+    "profile_weights": [
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "layerA_rx_scale": 1.0,
+    "layerA_ry_scale": 1.0,
+    "layerB_rx_scale": 0.85,
+    "layerB_ry_scale": 0.85,
+    "dropped_edge_names": [
+      "e0",
+      "e2"
+    ],
+    "dropped_edge_qubits": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_pattern": "phase5_ring6_two_layer_profile_multi_edge_ablation",
+    "notes": "Phase5 predictive multi-edge ablation candidate. Uses the same selected parent circuit structure as the predictive baseline, with the specified support edges removed from both CZ support layers.",
+    "noise_model": {
+      "single_qubit_depolarizing_p": 0.0015,
+      "two_qubit_depolarizing_p": 0.015,
+      "readout_confusion": [
+        [
+          0.985,
+          0.015
+        ],
+        [
+          0.02,
+          0.98
+        ]
+      ]
+    }
+  }
+}

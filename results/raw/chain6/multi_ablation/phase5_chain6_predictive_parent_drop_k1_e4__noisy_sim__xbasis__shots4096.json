@@ -1,0 +1,197 @@
+{
+  "phase": "Phase5",
+  "study_title": "SRFM Quantum Phase5 Predictive Structural Response Study",
+  "topology": "chain6",
+  "topology_class": "path",
+  "phase_role": "loop_free_comparison",
+  "phase5_role": "predictive_parent",
+  "predicted_response_class": "adaptive_improvement_then_collapse",
+  "circuit_id": "phase5_chain6_predictive_parent_drop_k1_e4",
+  "parent_circuit_id": "phase5_chain6_predictive_parent",
+  "run_type": "multi_ablation",
+  "noise_mode": "noisy_sim",
+  "measurement_basis": "X",
+  "shots": 4096,
+  "seed_simulator": 42,
+  "seed_transpiler": 42,
+  "n_qubits": 6,
+  "rx_ratio": 0.5,
+  "ry_ratio": 0.5,
+  "ablation": {
+    "type": "multi_edge_drop",
+    "perturbation_order": 1,
+    "dropped_edges": [
+      "e4"
+    ],
+    "dropped_edge_qubits": [
+      [
+        4,
+        5
+      ]
+    ]
+  },
+  "edge_definition": {
+    "e0": [
+      0,
+      1
+    ],
+    "e1": [
+      1,
+      2
+    ],
+    "e2": [
+      2,
+      3
+    ],
+    "e3": [
+      3,
+      4
+    ],
+    "e4": [
+      4,
+      5
+    ]
+  },
+  "derived_topology_state": {
+    "remaining_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "remaining_edge_count": 4,
+    "dropped_edge_count": 1,
+    "is_connected_after_ablation": false,
+    "n_components_after_ablation": 2,
+    "has_loop_after_ablation": false
+  },
+  "counts": {
+    "001110": 1,
+    "100101": 27,
+    "111011": 664,
+    "000010": 2,
+    "110101": 352,
+    "101011": 130,
+    "000110": 4,
+    "101111": 114,
+    "110001": 144,
+    "100111": 123,
+    "111000": 150,
+    "001101": 4,
+    "100100": 24,
+    "111100": 150,
+    "010101": 16,
+    "001010": 6,
+    "100001": 51,
+    "111111": 524,
+    "011011": 37,
+    "001011": 6,
+    "111110": 173,
+    "100010": 74,
+    "001111": 5,
+    "111010": 146,
+    "100110": 101,
+    "000011": 3,
+    "110100": 40,
+    "101100": 59,
+    "000100": 1,
+    "110011": 42,
+    "101101": 56,
+    "001100": 2,
+    "100011": 72,
+    "111101": 90,
+    "100000": 67,
+    "000111": 3,
+    "110000": 154,
+    "111001": 60,
+    "000000": 4,
+    "110111": 38,
+    "000001": 3,
+    "101010": 104,
+    "110110": 33,
+    "010000": 8,
+    "000101": 3,
+    "101110": 73,
+    "110010": 27,
+    "010110": 2,
+    "001000": 2,
+    "011100": 8,
+    "011111": 25,
+    "011000": 4,
+    "101001": 23,
+    "010111": 5,
+    "101000": 28,
+    "011010": 7,
+    "010100": 2,
+    "011101": 5,
+    "011110": 7,
+    "010001": 5,
+    "001001": 1,
+    "011001": 1,
+    "010010": 1
+  },
+  "summary": {
+    "total_counts": 4096,
+    "n_observed_states": 63,
+    "top_state": "111011",
+    "top_count": 664,
+    "top_probability": 0.162109375,
+    "target_probability": 0.1279296875,
+    "abs_parity": 0.0322265625,
+    "entropy_bits": 4.632061556239186
+  },
+  "target_bitstring": "111111",
+  "metadata": {
+    "generator": "run_phase5_multi_ablation_scan.py",
+    "builder_version": "phase5_v1_phase4_generalized_multi_ablation",
+    "profile_weights": [
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "layerA_rx_scale": 1.0,
+    "layerA_ry_scale": 1.0,
+    "layerB_rx_scale": 0.85,
+    "layerB_ry_scale": 0.85,
+    "dropped_edge_names": [
+      "e4"
+    ],
+    "dropped_edge_qubits": [
+      [
+        4,
+        5
+      ]
+    ],
+    "gate_pattern": "phase5_chain6_two_layer_profile_multi_edge_ablation",
+    "notes": "Phase5 predictive multi-edge ablation candidate. Uses the same selected parent circuit structure as the predictive baseline, with the specified support edges removed from both CZ support layers.",
+    "noise_model": {
+      "single_qubit_depolarizing_p": 0.0015,
+      "two_qubit_depolarizing_p": 0.015,
+      "readout_confusion": [
+        [
+          0.985,
+          0.015
+        ],
+        [
+          0.02,
+          0.98
+        ]
+      ]
+    }
+  }
+}

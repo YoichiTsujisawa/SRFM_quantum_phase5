@@ -1,0 +1,37 @@
+{
+  "topology_name": "ring6",
+  "topology_class": "cycle",
+  "n_qubits": 6,
+  "edge_count": 6,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      0
+    ]
+  ],
+  "is_connected": true,
+  "has_loop": true,
+  "phase_role": "formation_reference",
+  "phase5_response_hypothesis": "Strong baseline formation, weak adaptive gain, gradual degradation under increasing perturbation.",
+  "notes": "Reference ring topology carried forward from Phase4. Expected to favor formation strength over adaptive improvement."
+}

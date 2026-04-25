@@ -1,0 +1,82 @@
+{
+  "circuit_id": "phase5_random6_predictive_parent_drop_k3_e3_e4_e5",
+  "parent_circuit_id": "phase5_random6_predictive_parent",
+  "topology": "random6",
+  "topology_class": "irregular6_fixed",
+  "phase_role": "fixed_irregular_comparison",
+  "phase5_role": "predictive_parent",
+  "n_qubits": 6,
+  "rx_ratio": 0.48,
+  "ry_ratio": 0.52,
+  "predicted_response_class": "intermediate_mixed_response",
+  "ablation": {
+    "type": "multi_edge_drop",
+    "perturbation_order": 3,
+    "dropped_edges": [
+      "e3",
+      "e4",
+      "e5"
+    ],
+    "dropped_edge_qubits": [
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ]
+    ]
+  },
+  "derived_topology_state": {
+    "remaining_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "remaining_edge_count": 3,
+    "dropped_edge_count": 3,
+    "is_connected_after_ablation": false,
+    "n_components_after_ablation": 3,
+    "has_loop_after_ablation": false
+  },
+  "edge_definition_ref": "phase5_random6.edge_definition",
+  "gate_pattern": "phase5_random6_two_layer_profile_multi_edge_ablation",
+  "notes": "Phase5 predictive multi-edge ablation candidate. Uses the same selected parent circuit structure as the predictive baseline, with the specified support edges removed from both CZ support layers.",
+  "runtime_metadata": {
+    "qiskit_ready": false,
+    "qasm2_path": null,
+    "qasm3_path": null,
+    "n_layers": 4,
+    "measurement_supported": [
+      "X"
+    ],
+    "noise_modes_supported": [
+      "noisy_sim"
+    ],
+    "default_shots": 4096,
+    "topology": "random6",
+    "n_qubits": 6,
+    "ablation_supported": [
+      "multi_edge_drop"
+    ],
+    "supported_perturbation_orders": [
+      1,
+      2,
+      3
+    ]
+  }
+}

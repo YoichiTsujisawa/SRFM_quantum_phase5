@@ -1,0 +1,33 @@
+{
+  "topology_name": "chain6",
+  "topology_class": "path",
+  "n_qubits": 6,
+  "edge_count": 5,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "is_connected": true,
+  "has_loop": false,
+  "phase_role": "adaptive_comparison",
+  "phase5_response_hypothesis": "Weaker baseline formation, adaptive improvement under small perturbation, eventual collapse under larger perturbation.",
+  "notes": "Loop-free comparison topology carried forward from Phase4. Expected to reveal constraint-release behavior more clearly."
+}
